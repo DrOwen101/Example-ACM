@@ -1,0 +1,126 @@
+:root {
+  /* Change this color for an easy GitHub demo! */
+  --accent: #baff5a;
+  --background: #14231d;
+  --text: #f3f5ed;
+  --muted: #b9c5bc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  width: min(100% - 40px, 780px);
+  margin: 0 auto;
+  padding: 64px 0 32px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 24px 0;
+  font-size: clamp(2.7rem, 8vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.intro {
+  max-width: 580px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 40px 0;
+  padding: 28px;
+  border: 1px solid #415348;
+  border-radius: 16px;
+  background: #1d3026;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+#counter {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+button {
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--background);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 4px;
+}
+
+.secondary {
+  border-color: #74867a;
+  background: transparent;
+  color: var(--text);
+}
+
+ol {
+  padding-left: 24px;
+  color: var(--muted);
+}
+
+li {
+  padding: 6px 0;
+}
+
+strong {
+  color: var(--text);
+}
+
+code {
+  color: var(--accent);
+}
+
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid #415348;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
